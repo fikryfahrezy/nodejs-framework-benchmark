@@ -1,0 +1,38 @@
+{
+  "name": "nodejs-framework-benchmark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@nestjs/common": "^7.4.4",
+    "@nestjs/core": "^7.4.4",
+    "@nestjs/platform-express": "^7.4.4",
+    "@nestjs/platform-fastify": "^7.4.4",
+    "express": "^4.17.1",
+    "fastify": "^3.6.0",
+    "koa": "^2.13.0",
+    "koa-router": "^9.4.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.8",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "autocannon": "^6.5.0",
+    "eslint": "^7.11.0",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:ts": "ts-node src/index.ts",
+    "dev:ts": "nodemon --exec ts-node src/index.ts",
+    "autocannon": "./node_modules/.bin/autocannon -c400 -d10 http://localhost:5000/api?name=john"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
