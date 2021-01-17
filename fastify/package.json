@@ -1,0 +1,11 @@
+{
+  "name": "fastify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "fastify": "3.6.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

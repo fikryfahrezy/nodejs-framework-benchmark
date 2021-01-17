@@ -1,8 +1,0 @@
-Config Node.TS and nodemon
-https://medium.com/create-a-server-with-nodemon-express-typescript/create-a-server-with-nodemon-express-typescript-f7c88fb5ee71
-
-Install @types/node
-https://stackoverflow.com/questions/35551185/read-arguments-from-command-line-error-ts2304-cannot-find-name-process
-
-TS config project reference
-https://github.com/benawad/lireddit

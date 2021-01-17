@@ -1,0 +1,12 @@
+{
+  "name": "restify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "restify": "8.5.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

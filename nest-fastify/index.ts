@@ -1,6 +1,5 @@
 import { NestFactory } from '@nestjs/core';
-import { Module, Query } from '@nestjs/common';
-import { Controller, Get } from '@nestjs/common';
+import { Module, Query, Controller, Get } from '@nestjs/common';
 import {
   FastifyAdapter,
   NestFastifyApplication,
@@ -9,8 +8,9 @@ import {
 @Controller('api')
 class Controllers {
   @Get()
-  get(@Query('name') name: string): string {
-    return `Hi ${name} from nest-fastify`;
+  async get(@Query('name') name: string) {
+    const response = { message: `Hi ${name} from nest-fastify` };
+    return response;
   }
 }
 
@@ -19,12 +19,14 @@ class Controllers {
 })
 class AppModule {}
 
-async function nestFastifyStart() {
+(async () => {
+  const PORT = 5000;
+
   const app = await NestFactory.create<NestFastifyApplication>(
     AppModule,
     new FastifyAdapter()
   );
-  await app.listen(5000);
-}
-
-export default nestFastifyStart;
+  await app.listen(PORT, () => {
+    console.log(`nest with fastify server running on http://localhost:${PORT}`);
+  });
+})();
