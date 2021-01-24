@@ -8,6 +8,8 @@
 - [Fastify v.3.6.0](https://www.fastify.io/)
 - [Nest with Express Platform (default) v.7.4.4](https://nestjs.com/)
 - [Nest with Fasitify Platform v.7.4.4](https://docs.nestjs.com/techniques/performance)
+- [Hapi v.20.0.3](https://hapi.dev/)
+- [Restify v.8.5.1](http://restify.com/)
 
 ## Tools
 
